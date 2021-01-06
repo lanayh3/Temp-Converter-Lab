@@ -3,11 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Converter Form</title>
 </head>
 <body>
-    <h1> Temperature Scale Converter </h1>
+    <main>
+        <h1> Temperature Scale Converter </h1>
+            <p>Farenheit</p>
+        <div>
+            <label>Value</label>
+            <input id="inputFahrenheit" type="number"
+            oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)">
+        </div>
 
-    <button>Calculate</button>
+        <button  onclick="temperatureConverter(this.value)" class="button1" type="submit" >Calculate</button>
+       
+    </main>
+    <footer>
+        <p id="demo">Celsius <span id="outputCelsius"></span></p>
+    </footer>
 </body>
 </html>
