@@ -44,7 +44,17 @@ h1 {
   font-size: 50px;
 }
 
-/*.column {
+.main-footer {
+  text-align: center;
+  font-size: 20px;
+}
+.column {
+  display: inline-block;
+  padding: 50px 100px;
+  margin: 25px 10px;
+}
+/*
+.column {
   float: left;
   max-width:340px;
   min-width: 340px;
