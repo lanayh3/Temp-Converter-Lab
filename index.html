@@ -9,19 +9,33 @@
 <body>
     <main>
         <h1> Temperature Scale Converter </h1>
+
+        <div class="column">
             <p>Farenheit</p>
-        <div>
-            <label>Value</label>
-            <input id="inputFahrenheit" type="number"
-            oninput="temperatureConverter(this.value)"
-            onchange="temperatureConverter(this.value)">
         </div>
 
-        <button  onclick="temperatureConverter(this.value)" class="button1" type="submit" >Calculate</button>
-       
+        <div class="column">
+            <label>Value</label>
+            <input id="inputFahrenheit" type="number">
+        </div>
+
+        <div class="column">
+            <button class="button1" id="myBtn" type="submit">Calculate</button>
+        </div>
+
+        <p id="demo"></p>
+
+        <script>
+        document.getElementById("myBtn").addEventListener("click", temperatureConverter(valNum));
+
+        function temperatureConverter(valNum) {
+        valNum = parseFloat(valNum);
+        document.getElementById("demo").innerHTML = (valNum-32) / 1.8;}
+
+        </script>
     </main>
     <footer>
-        <p id="demo">Celsius <span id="outputCelsius"></span></p>
+    
     </footer>
 </body>
 </html>

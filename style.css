@@ -4,4 +4,55 @@ Want main header to say "Temperature Scale Converter".
 Below header, in a row the first label should read "Farenheit".
 The second element should be a box showing an input with the label of "Value".
 The third element should be a blue button that says, "Calculate".
-Finally, there should be a footer that displays an output with the label of "Celsius". */ 
+Finally, there should be a footer that displays an output with the label of "Celsius". */
+
+
+
+/*  <script>
+            function myFunction() {
+              document.getElementById("demo").innerHTML = "(valNum-32) / 1.8";
+            }
+            </script> */
+
+            /*<span id="outputCelsius"></span>*/
+
+            /*oninput="temperatureConverter(this.value)"
+            onchange="temperatureConverter(this.value)"*/
+
+
+html {
+  border: 1px solid black;
+  padding: 10px;
+  margin: 30px;
+  font-family: Arial, Helvetica, sans-serif, monospace;
+  
+}
+.button1 {
+    border: 1px solid blue;
+    color: black;
+    background-color: lightblue;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 50px;
+}
+
+/*.column {
+  float: left;
+  max-width:340px;
+  min-width: 340px;
+  padding: 10px 10px;
+}
+
+.column:after {
+  content: "";
+  display: table;
+  clear: both;
+} */
