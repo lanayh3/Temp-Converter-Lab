@@ -8,18 +8,6 @@ Finally, there should be a footer that displays an output with the label of "Cel
 
 
 
-/*  <script>
-            function myFunction() {
-              document.getElementById("demo").innerHTML = "(valNum-32) / 1.8";
-            }
-            </script> */
-
-            /*<span id="outputCelsius"></span>*/
-
-            /*oninput="temperatureConverter(this.value)"
-            onchange="temperatureConverter(this.value)"*/
-
-
 html {
   border: 1px solid black;
   padding: 10px;
@@ -43,7 +31,9 @@ h1 {
   text-align: center;
   font-size: 50px;
 }
-
+ h2 {
+   text-align: center;
+ }
 .main-footer {
   text-align: center;
   font-size: 20px;
@@ -53,16 +43,7 @@ h1 {
   padding: 50px 100px;
   margin: 25px 10px;
 }
-/*
-.column {
-  float: left;
-  max-width:340px;
-  min-width: 340px;
-  padding: 10px 10px;
-}
 
-.column:after {
-  content: "";
-  display: table;
-  clear: both;
-} */
+.result {
+  height: 10px;
+} 
